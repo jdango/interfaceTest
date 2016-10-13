@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<URL>http://app65.s.weshaketv.com:9303</URL>
+	<HOST>app65.s.weshaketv.com</HOST>
+	<PORT>9303</PORT>
+	<REQ_CODE>返回状态码为200</REQ_CODE>
+
+	<!-- 现金商城相关接口 -->
+
+	<!-- 根据code获取频道 -->
+	<getChannelInfoByCode>
+		<path>/mall_front_api/jpcms/getChannelInfoByCode.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345112</param1>
+		<param2>channelCode=WYPD</param2>
+		<resp>"page":1</resp>
+		<resp1>"createUserName":"wypd"</resp1>
+	</getChannelInfoByCode>
+
+	<!-- 获取banner -->
+	<getBannerPool>
+		<path>/mall_front_api/jpcms/getBannerPool.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>channelCode=WYPD</param2>
+		<param3>saleType=1</param3>
+		<resp>"page":1</resp>
+	</getBannerPool>
+
+	<!-- 获取首页商品展示 -->
+	<getGoodsPool>
+		<path>/mall_front_api/jpcms/getGoodsPoolInterMoney.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>channelCode=WYPD</param2>
+		<resp>"page":1</resp>
+	</getGoodsPool>
+
+	<!-- 获取全部商品 -->
+	<getProductList>
+		<path>/mall_front_api/jpProduct/getProductList.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>channelCode=WYPD</param2>
+		<param3>saleType=1</param3>
+		<param4>page=1</param4>
+		<param5>rows=6</param5>
+		<param6>status=1</param6>
+		<param7>isDeleted=0</param7>
+		<resp>"page":1</resp>
+	</getProductList>
+
+	<!-- 获取商品详情 -->
+	<getProductDetail>
+		<path>/mall_front_api/jpProduct/getProductDetail.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>page=1</param2>
+		<param3>rows=1</param3>
+		<param4>productCode=20160119386932</param4>
+		<resp>"page":1</resp>
+	</getProductDetail>
+
+	<!-- 获取sku详情 -->
+	<getSkuDetail>
+		<path>/mall_front_api/jpProduct/getSkuDetail.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>productCode=20160119386932</param2>
+		<param3>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param3>
+		<resp>"page":1</resp>
+	</getSkuDetail>
+
+	<!-- 获取确认订单信息 -->
+	<getConfirmOrderInfo>
+		<path>/mall_front_api/jpProduct/getConfirmOrderInfo.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>skuId=20160121015753804K0wx5T</param2>
+		<resp>"page":1</resp>
+	</getConfirmOrderInfo>
+
+	<!-- 获取地址 -->
+	<getAddress>
+		<path>/mall_front_api/jpProduct/getAddress.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<resp>"page":1</resp>
+	</getAddress>
+
+	<!-- 更改地址 -->
+	<insertOrUpdateAddress>
+		<path>/mall_front_api/jpProduct/insertOrUpdateAddress.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<param3>Name=%E9%BB%84</param3>
+		<param4>userAddress=%25E6%25AD%25A6%25E6%2598%258C%25E5%258C%25BA%25E5%2593%2588%25E5%2593%2588%25E5%2593%2588%25E5%2593%2588%25E5%2595%25A6%25E5%2595%25A6%25E5%2595%25A6</param4>
+		<param5>userPhone=18871668855</param5>
+		<param6>id=101</param6>
+		<resp>flag : 1</resp>
+	</insertOrUpdateAddress>
+
+	<!-- 提交订单 -->
+	<generateOrder>
+		<path>/mall_front_api/jpProduct/generateOrder.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<param3>skuid=20160121015753804K0wx5T</param3>
+		<param4>num=1</param4>
+		<param5>wechatNickname=5a2Z5aSn6IS4</param5>
+		<resp>"page":1</resp>
+	</generateOrder>
+
+	<!-- 获取全部订单 -->
+	<getUserOrderList>
+		<path>/mall_front_api/jpProduct/getUserOrderList.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<param3>orderStatus=0</param3>
+		<param4>exchangeType=0</param4>
+		<resp>\\"channel_code\\":\\"WYPD\\"</resp>
+	</getUserOrderList>
+
+	<!-- 获取订单详情 -->
+	<getOrderDetail>
+		<path>/mall_front_api/jpProduct/getOrderDetail.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<param3>exchangeOrderCode=W2016012002273993154o9fM</param3>
+		<resp>\\"channel_code\\":\\"WYPD\\"</resp>
+	</getOrderDetail>
+
+	<!-- 申请售后 -->
+	<appealOrder>
+		<path>/mall_front_api/jpProduct/appealOrder.action</path>
+		<param1>callback=jQuery211001579385995864868_1453359345116</param1>
+		<param2>exchangeOrderCode=W20160118054436804osBt7U</param2>
+		<param3>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param3>
+		<param4>phone=15678787878</param4>
+		<param5>productType=1</param5>
+		<param6>channelCode=WYPD</param6>
+		<param7>remarkReason=%E9%BB%98%E8%AE%A4</param7>
+		<resp>"page":1</resp>
+	</appealOrder>
+</config>

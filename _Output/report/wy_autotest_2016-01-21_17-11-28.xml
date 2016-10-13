@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="wy_auto_test" tests="1" errors="0" failures="1" skip="0"><testcase classname="TestCases.ApiCases.RongheInterface.test_p0_wy_cashmall.test_get_ChannelInfoByCode_cash" name="根据code获取频道：正常" time="18.280"><failure type="exceptions.AssertionError" message="返回状态码为200&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Failure&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 327, in run
+    testMethod()
+  File "C:\Python27\lib\site-packages\nose\case.py", line 207, in runTest
+    self.test(*self.arg)
+  File "D:\wy_auto\TestCases\ApiCases\RongheInterface\test_p0_wy_cashmall.py", line 27, in test_get_ChannelInfoByCode_cash
+    Verify.IsTrue(Common.get_http_code(url, data) == requests.codes.ok, Config.HttpConfig_cashmall().REQ_CODE)
+  File "D:\wy_auto\Util\Verify.py", line 13, in IsTrue
+    assert condition, msg
+返回状态码为200
+-------------------- >> begin captured stdout << ---------------------
+Failure
+
+--------------------- >> end captured stdout << ----------------------]]></failure><system-out>Failure
+</system-out></testcase></testsuite>

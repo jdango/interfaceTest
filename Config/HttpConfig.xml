@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<URL>http://203.195.133.129</URL>
+	<HOST>203.195.133.129</HOST>
+	<PORT>9091</PORT>
+	<REQ_CODE>返回码状态码为200</REQ_CODE>
+
+	<!-- 频道相关信息 -->
+
+	<!--获得频道信息接口地址-->
+	<getChannel>
+		<url>http://119.29.42.74/ronghe2/base/getChannel</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>channelCode=WXYDS</param2>
+		<resp>"ret":0</resp>
+	</getChannel>
+
+	<!--获得分享信息接口地址-->
+	<getShare>
+		<url>http://119.29.42.74/ronghe2/share/getShare</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>channelCode=WXYDS</param2>
+		<param3>type=1</param3>
+		<resp>"ret":0</resp>
+	</getShare>
+
+	<!--获得首页背景的配置-->
+	<getBKConfig>
+		<url>http://119.29.42.74/ronghe2/base/getBkConfig</url>
+		<param1>callback=jQuery21101342120748013258_1449821323231</param1>
+		<param2>channelCode=GKYS</param2>
+		<resp>"ret":0</resp>
+	</getBKConfig>
+
+	<!--获得节目单信息接口地址-->
+	<getListProgram>
+		<url>http://119.29.42.74/ronghe2/program/getList</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>channelCode=WXYDS</param2>
+		<resp>"ret":0</resp>
+	</getListProgram>
+
+	<!--获得橱窗信息接口地址-->
+	<getListShowcase>
+		<url>http://119.29.42.74/ronghe2/showcase/getList</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>channelCode=WXYDS</param2>
+		<resp>"ret":0</resp>
+	</getListShowcase>
+
+	<!--获得用户信息接口地址-->
+	<getUserInfo>
+		<url>http://119.29.42.74/ronghe2/user/getUserInfo</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<resp>"ret":0</resp>
+	</getUserInfo>
+
+	<!--获得用户红包信息接口地址-->
+	<getUserRedInfo>
+		<url>http://119.29.42.74/ronghe2/user/getUserRedInfo</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<resp>"ret":-1</resp>
+	</getUserRedInfo>
+
+	<!--获得用户卡券信息接口地址-->
+	<getUserCardList>
+		<url>http://119.29.42.74/ronghe2/user/getUserCardList</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<resp>"ret":0</resp>
+	</getUserCardList>
+
+	<!--获得广告信息接口地址-->
+	<getAdProgram>
+		<url>http://119.29.42.74/ronghe2/program/getAd</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>channelCode=WXYDS</param2>
+		<resp>"ret":0</resp>
+	</getAdProgram>
+
+	<!--获得节目单详情信息接口地址-->
+	<getInfoProgram>
+		<url>http://119.29.42.74/ronghe2/program/getInfo</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>id=1170</param2>
+		<resp>"ret":-1</resp>
+	</getInfoProgram>
+
+
+	<!-- 电视相关接口 -->
+
+	<!--电视剧初始化节目单-->
+	<getTvInit>
+		<url>http://119.29.42.74/ronghe2/tv/init</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>code=WXYDS_HYXSM_20150702</param2>
+		<param3>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param3>
+		<resp>"ret":0</resp>
+	</getTvInit>
+
+
+	<!--电视剧答题-->
+	<getTvAnswer>
+		<url>http://119.29.42.74/ronghe2/tv/answer</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>code=WXYDS_HYXSM_20150702</param2>
+		<param3>topicId=708</param3>
+		<param4>answer=4</param4>
+		<param5>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param5>
+		<resp>"ret":0</resp>
+	</getTvAnswer>
+
+	<!--电视剧切换答题-->
+	<getNewTopic>
+		<url>http://119.29.42.74/ronghe2/tv/getNewTopic</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>code=WXYDS_HYXSM_20150702</param2>
+		<param3>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param3>
+		<resp>"ret":0</resp>
+	</getNewTopic>
+
+	<!--电视剧心跳-->
+	<heartbeat>
+		<url>http://119.29.42.74/ronghe2/tv/heartbeat</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<resp>"now"</resp>
+	</heartbeat>
+
+	<!--电视剧获取规则-->
+	<rule>
+		<url>http://119.29.42.74/ronghe2/tv/rule</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>code=WXYDS_HYXSM_20150702</param2>
+		<resp>"ret":1</resp>
+	</rule>
+
+	<!--电视剧获取广告-->
+	<getAdTv>
+		<url>http://119.29.42.74/ronghe2/program/getAdTv</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>code=WXYDS_HYXSM_20150702</param2>
+		<resp>"ret":0</resp>
+	</getAdTv>
+
+
+	<!-- 新闻相关接口 -->
+
+	<!--获得主页面新闻列表-->
+	<getAllNews>
+		<url>http://119.29.42.74/ronghe2/news/getAllNews</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>curPage=-1</param2>
+		<param3>code=WXYDS_ZBWY_20150703</param3>
+		<resp>"channelCode":"WXYDS"</resp>
+	</getAllNews>
+
+	<!--每隔十秒拉取最新审核新闻的长度-->
+	<getAuditNewsSize>
+		<url>http://119.29.42.74/ronghe2/news/getAuditNewsSize</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>code=WXYDS_ZBWY_20150703</param2>
+		<resp>"size":5</resp>
+	</getAuditNewsSize>
+
+	<!--点赞-->
+	<zanAdd>
+		<url>http://119.29.42.74/ronghe2/news/zanAdd</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>nid=fd94d563d6334ceeadc5ce4d55d40a7c</param2>
+		<param3>code=WXYDS_ZBWY_20150703</param3>
+		<!--
+		<resp>"size":5</resp>
+		-->
+	</zanAdd>
+
+	<!--单个新闻-->
+	<getSingleNews>
+		<url>http://119.29.42.74/ronghe2/news/getSingleNews</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<param3>code=WXYDS_ZBWY_20150703</param3>
+		<param4>nid=fd94d563d6334ceeadc5ce4d55d40a7c</param4>
+		<resp>"icon"</resp>
+	</getSingleNews>
+
+	<!--单个新闻下的评论-->
+	<getComments>
+		<url>http://119.29.42.74/ronghe2/news/getComments</url>
+		<param1>callback=jQuery21103550553338136524_1439449516193</param1>
+		<param2>index=6</param2>
+		<param3>code=WXYDS_ZBWY_20150703</param3>
+		<param4>nid=fd94d563d6334ceeadc5ce4d55d40a7c</param4>
+		<resp>"channelCode":"WXYDS"</resp>
+	</getComments>
+
+	<!--发表评论-->
+	<comment>
+		<url>http://119.29.42.74/ronghe2/news/comment</url>
+		<param1>callback=jQuery21104493343774229288_1449821758768</param1>
+		<param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+		<param3>content=天空</param3>
+		<param4>GKYS_%E6%B3%95%E7%AC%AC%E4%B8%89%E6%96%B9_20150924</param4>
+		<param5>nid=cbd033c0726f48eebcb2a600eeac8585</param5>
+		<param6>channelCode=GKYS</param6>
+		<resp>"reward"</resp>
+	</comment>
+
+	<!--投票-->
+	<voteA>
+		<url>http://119.29.42.74/ronghe2/news/voteA</url>
+		<param1>callback=jQuery211020230176579207182_1440471160718</param1>
+		<param2>nid=23aaf7c8e548409090ae7b9454c2511c</param2>
+		<param3>code=WXYDS_ZBWY_20150703</param3>
+		<param4>oids=482</param4>
+		<param5>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param5>
+		<resp>"options"</resp>
+	</voteA>
+
+	<!-- 新版新闻相关接口 -->
+
+	<!--新版新闻投票-->
+	<vote>
+		<url>http://119.29.42.74/ronghe2/topic/vote</url>
+		<param1>callback=jQuery21104803509775083512_1445414196889</param1>
+		<param2>openid=aa8422d7731444f18117af4a9bc3cab8</param2>
+		<param3>topicId=3263e623baf848908abef5e8df5e57b4</param3>
+		<param4>sort=1</param4>
+		<resp>"ret":-1</resp>
+	</vote>
+
+	<!--新版新闻获取投票结果-->
+	<getTopicDetail>
+		<url>http://119.29.42.74/ronghe2/topic/getTopicDetail</url>
+		<param1>callback=jQuery21104803509775083512_1445414196889</param1>
+		<param2>code=GKYS_XW_20150922</param2>
+		<param3>openid=aa8422d7731444f18117af4a9bc3cab8</param3>
+		<resp>"tvLogoSmall"</resp>
+	</getTopicDetail>
+
+	<!--新版新闻评论-->
+	<saveComment>
+		<url>http://119.29.42.74/ronghe2/topic/getTopicDetail</url>
+		<param1>callback=jQuery21104803509775083512_1445414196889</param1>
+		<param2>topicId=3263e623baf848908abef5e8df5e57b4</param2>
+		<param3>content=v+%E5%92%8C+v+%E5%92%8C+v</param3>
+		<param4>openid=aa8422d7731444f18117af4a9bc3cab8</param4>
+		<param5>channelCode=GKYS</param5>
+		<param6>programCode=GKYS_XW_20150922</param6>
+		<resp>"ret":-1</resp>
+	</saveComment>
+
+	<!--新版新闻页面摇一摇-->
+	<getSchedule>
+		<url>http://119.29.42.74/ronghe2/lottery-schedule/getSchedule</url>
+		<param1>callback=jQuery21104803509775083512_1445414196889</param1>
+		<param2>pageId=topicVote</param2>
+		<param3>channelCode=GKYS</param3>
+		<resp>"ret":"-1"</resp>
+	</getSchedule>
+
+	<!--新版新闻获取评论列表-->
+	<getCommentList>
+		<url>http://119.29.42.74/ronghe2/comment/getCommentList</url>
+		<param1>callback=jQuery211028201066283509135_1445415095101</param1>
+		<param2>code=GKYS_XW_20150922</param2>
+		<param3>topicId=a709473e6bb542dfb88bb8d522613a75</param3>
+		<param4>pageSize=5</param4>
+		<param5>startIndex=0</param5>
+		<!--<resp>"createTime":1448963755000</resp>-->
+		<resp>"nid":"a709473e6bb542dfb88bb8d522613a75"</resp>
+	</getCommentList>
+
+	<!--判断新版新闻版式（节目单调用）-->
+	<getTopicA>
+		<url>http://119.29.42.74/ronghe2/topic/getTopic</url>
+		<param1>callback=jQuery21104803509775083512_1445414196889</param1>
+		<param2>code=GKYS_XW_20150922</param2>
+		<resp>"currTopic":null</resp>
+	</getTopicA>
+
+	<!--判断爆料设置-->
+	<getTipoffSetting>
+		<url>http://119.29.42.74/ronghe2/topic/getTipoffSetting</url>
+		<param1>callback=jQuery21104803509775083512_1445414196889</param1>
+		<param2>code=GKYS_XW_20150922</param2>
+		<resp>"channelCode":"GKYS"</resp>
+	</getTipoffSetting>
+
+	<!--新版新闻页面分享-->
+	<getShareNew>
+		<url>http://119.29.42.74/ronghe2/share/getShare</url>
+		<param1>callback=jQuery21104803509775083512_1445414196889</param1>
+		<param2>code=GKYS</param2>
+		<param3>type=1</param3>
+		<resp>"ret":0</resp>
+	</getShareNew>
+
+	<!--提交爆料-->
+	<saveTipoff>
+		<url>http://119.29.42.74/ronghe2/topic/saveTipoff</url>
+		<param1>callback=jQuery211028201066283509135_1445415095101</param1>
+		<param2>channelCode=GKYS</param2>
+		<param3>code=GKYS_XW_20150922</param3>
+		<param4>openid=aa8422d7731444f18117af4a9bc3cab8</param4>
+		<param5>nickname=KOKKmV%2Fiipkp8J+SnfCfjoHwn46J8J+OgvCfkrDwn5G7</param5>
+		<param6>icon=</param6>
+		<param7>title=%E5%AD%95%E5%A6%87%E9%A2%84%E9%98%B2</param7>
+		<param8>content=%E5%A7%91%E5%A7%91%E7%A6%8F</param8>
+		<param9>telephone=13512345678</param9>
+		<resp>"ret":0</resp>
+	</saveTipoff>
+
+	<ResponseStruct>
+		<VersionKey>version</VersionKey>
+		<ActionKey>action</ActionKey>
+		<ErrorCodeKey>errorCode</ErrorCodeKey>
+		<AllRowsKey>allRows</AllRowsKey>
+		<DataKey>data</DataKey>
+	</ResponseStruct>
+
+</config>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <URL>http://203.195.133.129</URL>
+  <HOST>203.195.133.129</HOST>
+  <PORT>9091</PORT>
+  <REQ_CODE>返回状态码为200</REQ_CODE>
+
+  <!-- 微摇商城相关接口 -->
+
+  <!-- 查询用户总积分 -->
+  <getTotalIntegral>
+    <path>/mall-front-api/jpcms/getTotalIntegral.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>channelCode=hnds</param2>
+    <param3>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param3>
+    <resp>totalPoints</resp>
+  </getTotalIntegral>
+
+  <!-- 根据页面code查询页面所有类型元素列表 -->
+  <getPageConfigByPageCode>
+    <path>/mall-front-api/jpcms/getPageConfigByPageCode.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>pageCode=wyscpage1</param2>
+    <resp>"page":1</resp>
+  </getPageConfigByPageCode>
+
+  <!-- 分页查询产品图片描述等信息 -->
+  <getListForProductDetail>
+    <path>/mall-front-api/jpProduct/getListForProductDetail.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>channelCode=hnds</param2>
+    <param3>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param3>
+    <resp>"page":1</resp>
+  </getListForProductDetail>
+
+  <!-- 根据产品code查询规格属性 -->
+  <getSkuAttributeShow>
+    <path>/mall-front-api/jpProduct/getSkuAttributeShow.action</path>
+    <param1>productCode=20151125785163</param1>
+    <param2>callback=jQuery21106348589349072427_1449027634841</param2>
+    <param3>channelCode=hnds</param3>
+    <resp>"pageId":1</resp>
+  </getSkuAttributeShow>
+
+  <!-- 根据SSKUID查询sku，product产品图片等相关信息 -->
+  <getConfirmOrderInfo>
+    <path>/mall-front-api/jpProduct/getConfirmOrderInfo.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>skuId=20151201102202496P1GL4L</param2>
+    <resp>"page":1</resp>
+  </getConfirmOrderInfo>
+
+  <!-- 积分及金币兑换 -->
+  <doExchange>
+    <path>/mall-front-api/jpProduct/doExchange.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+    <param3>skuid=20151201102202496P1GL4L</param3>
+    <param4>num=1</param4>
+    <param5>wechatNickname=5a2Z5aSn6IS4</param5>
+    <param6>exchangeType=1</param6>
+    <resp>flag : 1</resp>
+  </doExchange>
+
+  <!-- 根据频道code查询频道信息 -->
+  <getChannelInfoByCode>
+    <path>/mall-front-api/jpcms/getChannelInfoByCode.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>channelCode=hnds</param2>
+    <resp>"page":1</resp>
+  </getChannelInfoByCode>
+
+  <!-- 分页获取用户金币 -->
+  <getUserGoldFlowByPage>
+    <path>/mall-front-api/jpProduct/getUserGoldFlowByPage.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+    <param3>channelCode=hnds</param3>
+    <resp>"ret"</resp>
+  </getUserGoldFlowByPage>
+
+  <!-- 分页查询兑换记录 -->
+  <getExchangeList>
+    <path>/mall-front-api/jpProduct/getExchangeList.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+    <param3>exchangeType=2</param3>
+    <resp>"page":1</resp>
+  </getExchangeList>
+
+  <!-- 根据页面code及元素类型查询某种元素的配置信息 -->
+  <getElementConfig>
+    <path>/mall-front-api/jpcms/getElementConfig.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>pageCode=hndspage1</param2>
+    <param3>elementType=2</param3>
+    <resp>"page":1</resp>
+  </getElementConfig>
+
+  <!-- 根据产品code查询产品池信息 -->
+  <getCmsProductByCode>
+    <path>/mall-front-api/jpcms/getCmsProductByCode.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>productCode=20151124172760</param2>
+    <resp>"page":1</resp>
+  </getCmsProductByCode>
+
+  <!-- 根据openid查询地址信息 -->
+  <getAddress>
+    <path>/mall-front-api/jpProduct/getAddress.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+    <resp>"page":1</resp>
+  </getAddress>
+
+  <!-- 插入或更新地址信息 -->
+  <insertOrUpdateAddress>
+    <path>/mall-front-api/jpProduct/insertOrUpdateAddress.action</path>
+    <param1>callback=jQuery21106348589349072427_1449027634841</param1>
+    <param2>openid=c3d9963e3b0b437c81292f8d0c8a7bdc</param2>
+    <param3>userName=房顶上。</param3>
+    <param4>userAddress=%25E6%25B9%2596%25E5%258C%2597%25E7%259C%2581%25E6%25AD%25A6%25E6%25B1%2589%25E5%25B8%2582%25E6%25B4%25AA%25E5%25B1%25B1%25E5%258C%25BA%25E8%2599%258E%25E6%25B3%2589%25E6%2595%2599%25E5%25B8%2588%25E5%25B0%258F%25E5%258C%25BA%25E9%2597%25A8%25E5%258F%25A3%25E7%25AD%2589%25E5%2586%258D%25E4%25B9%25B0%25E5%2589%2581%25E6%2589%258B%2520%25E8%25A3%2585%25E9%2580%25BC%2520%25E5%259C%259F%25E8%25B1%25AA</param4>
+    <param5>userPhone=15629171568</param5>
+    <param6>id=43</param6>
+    <resp>flag : 1</resp>
+  </insertOrUpdateAddress>
+</config>

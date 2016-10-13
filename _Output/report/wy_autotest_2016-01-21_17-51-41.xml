@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="wy_auto_test" tests="1" errors="0" failures="1" skip="0"><testcase classname="TestCases.ApiCases.RongheInterface.test_p0_wy_cashmall.test_get_UserOrderList" name="获取全部订单：正常" time="9.247"><failure type="exceptions.AssertionError" message="&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Failure&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 327, in run
+    testMethod()
+  File "C:\Python27\lib\site-packages\nose\case.py", line 207, in runTest
+    self.test(*self.arg)
+  File "D:\wy_auto\TestCases\ApiCases\RongheInterface\test_p0_wy_cashmall.py", line 146, in test_get_UserOrderList
+    Response.http_code_check(Config.HttpConfig_cashmall().getUserOrderList.resp, common_itemconfig_result)
+  File "D:\wy_auto\Controller\Api\Response.py", line 125, in http_code_check
+    assert resp_data in str(result)
+
+-------------------- >> begin captured stdout << ---------------------
+Failure
+
+--------------------- >> end captured stdout << ----------------------]]></failure><system-out>Failure
+</system-out></testcase></testsuite>

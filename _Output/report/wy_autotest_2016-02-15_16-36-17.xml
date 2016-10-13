@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="wy_auto_test" tests="1" errors="1" failures="0" skip="0"><testcase test_method="TestCases.ApiCases.RongheInterface.test_p0_ronghe_three.test_get_ChannelInfo_shake" name="获取频道信息(摇奖版) ：正常" time="0.008"><error type="exceptions.AttributeError" message="'list' object has no attribute 'path'&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;ERROR&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 327, in run
+    testMethod()
+  File "C:\Python27\lib\site-packages\nose\case.py", line 207, in runTest
+    self.test(*self.arg)
+  File "D:\wy_auto\TestCases\ApiCases\RongheInterface\test_p0_ronghe_three.py", line 335, in test_get_ChannelInfo_shake
+    url = Config.HttpConfig_ronghe3().URL + Config.HttpConfig_ronghe3().getChannelInfoShake.path + '?' + Config.HttpConfig_ronghe3().getChannelInfoShake.param1 + '&' + Config.HttpConfig_ronghe3().getChannelInfoShake.param2
+'list' object has no attribute 'path'
+-------------------- >> begin captured stdout << ---------------------
+ERROR
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out>ERROR
+</system-out></testcase></testsuite>

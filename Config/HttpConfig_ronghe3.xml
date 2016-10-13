@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <URL>https://tmp.s.weshaketv.com</URL>
+  <URLHTTP>http://192.168.10.218:9020</URLHTTP>
+  <HOST>192.168.10.218</HOST>
+  <PORT>9020</PORT>
+  <REQ_CODE>返回状态码为200</REQ_CODE>
+
+  <!-- 微摇融合平台3话题版相关接口 -->
+
+  <!-- 获取频道信息 -->
+  <getChannelInfo3>
+    <path>/ronghe3_api/channel/getChannelInfo</path>
+    <param1>callback=jQuery21105155547806061804_1455420414734</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":"0"</resp>
+  </getChannelInfo3>
+
+  <!-- 获取摇奖时段信息 -->
+  <getTimer>
+    <path>/ronghe3_api/timer/getTimer</path>
+    <param1>callback=jQuery21105155547806061804_1455420414736</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":"0"</resp>
+  </getTimer>
+
+  <!-- 获取banner列表信息 -->
+  <getBannerList>
+    <path>/ronghe3_api/banner/getBannerList</path>
+    <param1>callback=jQuery21105155547806061804_1455420414738</param1>
+    <param2>location=index</param2>
+    <param3>targetType=img</param3>
+    <param4>channelCode=HCDS</param4>
+    <resp>"ret":0</resp>
+  </getBannerList>
+
+  <!-- 获取朋友圈分享配置 -->
+  <getShare>
+    <path>/ronghe3_api/channel/getShare</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":"0"</resp>
+  </getShare>
+
+  <!-- 显示设置（是否显示理财、电影、精彩推荐等） -->
+  <getChannelConfigByType>
+    <path>/ronghe3_api/channel/getChannelConfigByType</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>configType=display</param3>
+    <resp>"ret":"0"</resp>
+  </getChannelConfigByType>
+
+  <!-- 获取节目单信息 -->
+  <getList>
+    <path>/ronghe3_api/program/getList</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":0</resp>
+  </getList>
+
+  <!-- 获取热门节目 -->
+  <getHotList>
+    <path>/ronghe3_api/program/getHotList</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":0</resp>
+  </getHotList> 
+
+  <!-- 获取某热门节目下的话题 -->
+  <getProgramTopicListByPage>
+    <path>/ronghe3_api/topic/getProgramTopicListByPage</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>programCode=HCDS_RJWQ_20160108</param2>
+    <param3>curPage=1</param3>
+    <resp>"ret":0</resp>
+  </getProgramTopicListByPage>
+
+  <!-- 获取我发表过的话题 -->
+  <getMyTopicList>
+    <path>/ronghe3_api/topic/getMyTopicList</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>openid=c6b4647b46fd4a7eb41a1c16e9e1f428</param3>
+    <resp>"ret":0</resp>
+  </getMyTopicList>     
+
+  <!-- 获取用户信息 -->
+  <getUserInfo>
+    <path>/ronghe3_api/user/getUserInfo</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>openid=c6b4647b46fd4a7eb41a1c16e9e1f428</param2>
+    <resp>"ret":0</resp>
+  </getUserInfo>
+
+  <!-- 获取用户积分信息 -->
+  <getUserIntegral>
+    <path>/ronghe3_api/integral/getUserIntegral</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>openid=c6b4647b46fd4a7eb41a1c16e9e1f428</param3>
+    <resp>"ret":1</resp>
+  </getUserIntegral>
+
+  <!-- 获取用户金币信息 -->
+  <getUserWealth>
+    <path>/ronghe3_api/wealth/getUserWealth</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>openid=c6b4647b46fd4a7eb41a1c16e9e1f428</param2>
+    <resp>"ret":1</resp>
+  </getUserWealth>
+
+  <!-- 发表话题 -->
+  <saveProgramTopic>
+    <path>/ronghe3_api/publish/saveProgramTopic</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>programCode=HCDS_RJWQ_20160108</param3>
+    <param4>openid=c6b4647b46fd4a7eb41a1c16e9e1f428</param4>
+    <param5>topicTitle=1232</param5>
+    <param6>topicContent=12312312</param6>
+    <resp>"ret":"0"</resp>
+  </saveProgramTopic>
+
+  <!-- 发表评论 -->
+  <saveComment>
+    <path>/ronghe3_api/comment/saveComment</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>topicId=5edad1541a6742bc90451d2c143a4949</param2>
+    <param3>content=12333</param3>
+    <param4>openid=c6b4647b46fd4a7eb41a1c16e9e1f428</param4>
+    <param5>channelCode=HCDS</param5>
+    <param6>programCode=HCDS_RJWQ_20160108</param6>
+    <resp>"ret":0</resp>
+  </saveComment>
+
+  <!-- 拉取评论 -->
+  <getCommentList>
+    <path>/ronghe3_api/comment/getCommentList</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>topicId=5edad1541a6742bc90451d2c143a4949</param2>
+    <param3>currPage=1</param3>
+    <resp>"ret":0</resp>
+  </getCommentList>
+
+  <!-- 获取猜广告游戏的配置 -->
+  <getActTimer>
+    <path>/ronghe3_api/channelAct/getActTimer</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>openid=c6b4647b46fd4a7eb41a1c16e9e1f428</param2>
+    <param3>timerId=5684d833ea1b479cab1fcde1738fd906</param3>
+    <param4>channelActId=1e14eef11d0645c99f4cf94703d859da</param4>
+    <resp>"ret":"4"</resp>
+  </getActTimer>
+
+  <!-- 提交猜广告结果 -->
+  <saveUserResult>
+    <path>/ronghe3_api/channelAct/saveUserResult</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelActId=1e14eef11d0645c99f4cf94703d859da</param2>
+    <param3>timerId=5684d833ea1b479cab1fcde1738fd906</param3>
+    <param4>result=083f209142a04dc19f3ad43c9e3f4d70%2C1f5137008eff47419991de48eb920b5c%2C768ddf00bbff4a6390db29005f063338%2Cfe7b60f8515a4d3fa7720e47c2fcf3ff</param4>
+    <resp>"ret":"1"</resp>
+  </saveUserResult>
+
+  <!-- 获取已参与猜广告的用户信息 -->
+  <getActUsersAnswered>
+    <path>/ronghe3_api/channelAct/getActUsersAnswered</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>timerId=5684d833ea1b479cab1fcde1738fd906</param3>
+    <resp>"ret":"0"</resp>
+  </getActUsersAnswered>
+
+  <!-- 获取中奖信息 -->
+  <getUserResult>
+    <path>/ronghe3_api/channelAct/getUserResult</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>openid=c6b4647b46fd4a7eb41a1c16e9e1f428</param2>
+    <param3>timerId=5684d833ea1b479cab1fcde1738fd906</param3>
+    <param4>channelActId=1e14eef11d0645c99f4cf94703d859da</param4>
+    <resp>"ret":"1"</resp>
+  </getUserResult>
+
+  <!-- 获取热门电视下的话题数量和评论数量 -->
+  <getProgramStatisticsNum>
+    <path>/ronghe3_api/topic/getProgramStatisticsNum</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>programCode=HCDS_RJWQ_20160108</param2>
+    <resp>"ret":0</resp>
+  </getProgramStatisticsNum>
+
+  <!-- 获取热门电视下的滚屏话题 -->
+  <getScreenList>
+    <path>/ronghe3_api/topic/getScreenList</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>programCode=HCDS_RJWQ_20160108</param2>
+    <resp>"ret":0</resp>
+  </getScreenList>
+
+
+  <!-- 微摇融合平台3摇奖版相关接口 -->
+
+  <!-- 获取频道信息（进入按钮图片enterBtnImg、互动背景图actBgImg、摇宝图片yaoBaoImg） -->
+  <getChannelConfigShake>
+    <path>/ronghe3_api/channel/getChannelConfig</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>configName=enterBtnImg</param3>
+    <resp>"ret":"0"</resp>
+  </getChannelConfigShake> 
+
+  <!-- 获取首页背景图片 -->
+  <getIndexBgImgShake>
+    <path>/ronghe3_api/channel/getIndexBgImg</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":"0"</resp>
+  </getIndexBgImgShake> 
+
+  <!-- 获取频道信息 -->
+  <getChannelInfoShake>
+    <path>/ronghe3_api/channel/getChannelInfo</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":"0"</resp>
+  </getChannelInfoShake>
+
+  <!-- 登陆 -->
+  <loginByAct>
+    <path>/ronghe3_api/shake/loginByAct</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>openid=c6b4647b46fd4a7eb41a1c16e9e1f428</param3>
+    <resp>"ret":"0"</resp>
+  </loginByAct>
+
+  <!-- 获取登录用户信息 -->
+  <getOlByAct>
+    <path>/ronghe3_api/shake/getOlByAct</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":-1</resp>
+  </getOlByAct>
+
+  <!-- 获取摇奖时段信息 -->
+  <getTimerShake>
+    <path>/ronghe3_api/timer/getTimer</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":"0"</resp>
+  </getTimerShake>
+
+  <!-- 获取banner列表信息（摇奖版里面，获取背景音频和活动信息栏） -->
+  <getBannerListShake>
+    <path>/ronghe3_api/banner/getBannerList</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>location=index_activity_info</param2>
+    <param3>targetType=link</param3>
+    <param4>channelCode=HCDS</param4>
+    <resp>"ret":0</resp>
+  </getBannerListShake>
+
+  <!-- 获取朋友圈分享配置 -->
+  <getShareShake>
+    <path>/ronghe3_api/channel/getShare</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":"0"</resp>
+  </getShareShake>
+
+  <!-- 获取二维码图片 -->
+  <getQcode>
+    <path>/ronghe3_api/channel/getQcode</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <resp>"ret":"1"</resp>
+  </getQcode>
+
+  <!-- 获取中奖用户信息 -->
+  <getUserRewardsByAct>
+    <path>/ronghe3_api/shake/getUserRewardsByAct</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>timerId=bec2a9f95fb24c1fb11cc87426dae7d4</param3>
+    <resp>"ret":"0"</resp>
+  </getUserRewardsByAct>
+
+  <!-- 获取摇动时的广告图片 -->
+  <getActMaterial>
+    <path>/ronghe3_api/channelAct/getActMaterial</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelActId=50be47556172419fb2ec5c97cd907dbb</param2>
+    <resp>"ret":"0"</resp>
+  </getActMaterial>
+
+  <!-- 获取主题背景图片 -->
+  <getActImg>
+    <path>/ronghe3_api/channelAct/getActImg</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>timerId=bec2a9f95fb24c1fb11cc87426dae7d4</param2>
+    <resp>"ret":"0"</resp>
+  </getActImg>
+
+  <!-- 获取主题相关配置（未中奖提示、未中奖图片等等） -->
+  <getChannelConfigByTypeShake>
+    <path>/ronghe3_api/channel/getChannelConfigByType</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>configType=50be47556172419fb2ec5c97cd907dbb</param3>
+    <resp>"ret":"0"</resp>
+  </getChannelConfigByTypeShake>
+
+  <!-- 摇动抽奖 -->
+  <lotteryShake>
+    <path>/ronghe3_api/shake/lottery</path>
+    <param1>callback=jQuery21105155547806061804_1455420414742</param1>
+    <param2>channelCode=HCDS</param2>
+    <param3>openId=c6b4647b46fd4a7eb41a1c16e9e1f428</param3>
+    <resp>"ret":"0"</resp>
+  </lotteryShake>
+ </config>

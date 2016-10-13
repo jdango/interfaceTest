@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="wy_auto_test" tests="1" errors="1" failures="0" skip="0"><testcase test_method="TestCases.ApiCases.RongheInterface.test_p0_ronghe_three.test_get_List3_topic" name="获取节目单信息 ：正常" time="0.925"><error type="exceptions.AttributeError" message="'NoneType' object has no attribute 'groups'&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;ERROR&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 327, in run
+    testMethod()
+  File "C:\Python27\lib\site-packages\nose\case.py", line 207, in runTest
+    self.test(*self.arg)
+  File "D:\wy_auto\TestCases\ApiCases\RongheInterface\test_p0_ronghe_three.py", line 85, in test_get_List3_topic
+    common_itemconfig_result = Common.revoke_get_request(url, data)
+  File "D:\wy_auto\Controller\Api\Common.py", line 53, in revoke_get_request
+    str_res = re.compile('.*\((.*)\)').search(response).groups()
+'NoneType' object has no attribute 'groups'
+-------------------- >> begin captured stdout << ---------------------
+ERROR
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out>ERROR
+</system-out><system-err><![CDATA[C:\Python27\lib\site-packages\requests\packages\urllib3\util\ssl_.py:90: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+]]></system-err></testcase></testsuite>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="wy_auto_test" tests="1" errors="0" failures="0" skip="0"><testcase test_method="TestCases.ApiCases.RongheInterface.test_p0_ronghe_news.test_get_commentA" name="发表评论：正常" time="9.221"></testcase></testsuite>

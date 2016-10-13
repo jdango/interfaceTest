@@ -1,0 +1,28 @@
+usage : python t8t_start.py		[-h]
+                    			[-verbosity 0|1|2|3]
+                     			[-select keyword]
+                    			[-priority PRIORITY]
+                    			[-loop LOOP]
+optional arguments:
+-h                           	显示帮助信息
+
+-select                   		选择要执行的用例名称，对待测试用例的方法进行过滤，当前只支持 * / ^ / $ 符来进行模糊匹配
+                             	""（空串）表示选择所有用例，其他可以通过正则表达式匹配，默认值为""
+
+-priority                		筛选执行测试用例的级别
+                             	0表示筛选级别为0的用例，其他选项：1,2,3，默认值为"0,1,2,3"，表示全部级别
+                            	正在编写的用例可以设置级别为-1
+
+-loop 			         		测试用例循环测试次数，用例集执行测试
+                             	默认值为1
+
+示例
+1. 对用例级别为1的用例进行执行操作
+python t8t_start.py -priority=1
+
+2. 测试用例集执行5次
+python t8t_start.py -loop=5
+
+3. 只对某个用例进行测试
+python t8t_start.py -select=Api*CompanyList
+

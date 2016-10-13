@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="wy_auto_test" tests="1" errors="0" failures="1" skip="0"><testcase classname="TestCases.ApiCases.RongheInterface.test_p0_ronghe_three.test_get_ChannelConfig_shake" name="获取频道信息(摇奖版) ：正常" time="0.642"><failure type="exceptions.AssertionError" message="&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Failure&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 327, in run
+    testMethod()
+  File "C:\Python27\lib\site-packages\nose\case.py", line 207, in runTest
+    self.test(*self.arg)
+  File "D:\wy_auto\TestCases\ApiCases\RongheInterface\test_p0_ronghe_three.py", line 260, in test_get_ChannelConfig_shake
+    Response.http_code_check(Config.HttpConfig_ronghe3().getChannelConfigShake.resp, common_itemconfig_result)
+  File "D:\wy_auto\Controller\Api\Response.py", line 125, in http_code_check
+    assert resp_data in str(result)
+
+-------------------- >> begin captured stdout << ---------------------
+Failure
+
+--------------------- >> end captured stdout << ----------------------]]></failure><system-out>Failure
+</system-out><system-err><![CDATA[C:\Python27\lib\site-packages\requests\packages\urllib3\util\ssl_.py:90: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+]]></system-err></testcase></testsuite>

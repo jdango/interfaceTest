@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+
+	<!-- 图片信息 -->
+	<Picture>
+		<Path>D:\wy_auto\Config\1.jpg</Path>
+	</Picture>
+
+
+	<!-- 邮件配置  -->
+	<Email>
+		<Sender>tester@wxshake.com</Sender>
+		<Password>Weshake2015</Password>
+		<Receiver>
+			eason.sun@wxshake.com
+		</Receiver>
+		<Subject>【微摇融合自动化测试结果】</Subject>
+		<ErrorSubject>【微摇融合自动化测试结果出错】</ErrorSubject>
+		<!--Domain>42.120.219.29</Domain-->
+		<Domain>183.57.48.39</Domain>
+	</Email>
+
+</config>

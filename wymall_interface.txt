@@ -1,0 +1,48 @@
+
+查询用户总积分
+http://203.195.133.129/mall-front-api/jpcms/getTotalIntegral.action?callback=jQuery21106348589349072427_1449027634841&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&channelCode=hnds&_=1449027634842
+根据页面code查询页面所有类型元素列表
+http://203.195.133.129/mall-front-api/jpcms/getPageConfigByPageCode.action?callback=jQuery21106348589349072427_1449027634843&pageCode=wyscpage1&_=1449027634844
+分页查询产品图片描述等信息
+http://203.195.133.129/mall-front-api/jpProduct/getListForProductDetail.action?callback=jQuery211006292597856372595_1449036940722&page=1&rows=1&productCode=20151125785163&_=1449036940723
+根据产品code查询规格属性
+http://203.195.133.129/mall-front-api/jpProduct/getSkuAttributeShow.action?productCode=20151125785163&callback=jQuery211006292597856372595_1449036940720&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&_=1449036940724
+根据SSKUID查询sku,product,产品图片等相关信息
+http://203.195.133.129/mall-front-api/jpProduct/getConfirmOrderInfo.action?callback=jQuery21109685217926744372_1449036948869&skuId=20151201102202496P1GL4L&_=1449036948870
+积分及金币兑换
+http://203.195.133.129/mall-front-api/jpProduct/doExchange.action?callback=jQuery21109685217926744372_1449036948867&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&skuid=20151201102202496P1GL4L&num=1&wechatNickname=5a2Z5aSn6IS4&exchangeType=1&_=1449036948872
+根据频道code查询频道信息
+http://203.195.133.129/mall-front-api/jpcms/getChannelInfoByCode.action?callback=jQuery21108772888001985848_1449037228850&channelCode=hnds&_=1449037228851
+分页获取用户金币
+http://203.195.133.129/mall-front-api/jpProduct/getUserGoldFlowByPage.action?callback=jQuery211046448385948315263_1449037282986&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&channelCode=hnds&_=1449037282987
+分页查询兑换记录
+http://203.195.133.129/mall-front-api/jpProduct/getExchangeList.action?callback=jQuery211046448385948315263_1449037282990&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&exchangeType=2&_=1449037282991
+根据页面code及元素类型查询某种元素的配置信息
+http://203.195.133.129/mall-front-api/jpcms/getElementConfig.action?callback=jQuery21109295092127285898_1449037329054&pageCode=hndspage1&elementType=2&_=1449037329055
+根据产品code查询产品池信息
+http://203.195.133.129/mall-front-api/jpcms/getCmsProductByCode.action?callback=jQuery21109295092127285898_1449037329058&productCode=20151124172760&_=1449037329059
+根据openid查询地址信息
+http://203.195.133.129/mall-front-api/jpProduct/getAddress.action?callback=jQuery21108733063146937639_1449037578971&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&_=1449037578974
+插入或更新地址信息
+http://203.195.133.129/mall-front-api/jpProduct/insertOrUpdateAddress.action?callback=jQuery211042022303957492113_1449040346141&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&userName=%E6%88%BF%E9%A1%B6%E4%B8%8A%E3%80%82&userAddress=%25E6%25B9%2596%25E5%258C%2597%25E7%259C%2581%25E6%25AD%25A6%25E6%25B1%2589%25E5%25B8%2582%25E6%25B4%25AA%25E5%25B1%25B1%25E5%258C%25BA%25E8%2599%258E%25E6%25B3%2589%25E6%2595%2599%25E5%25B8%2588%25E5%25B0%258F%25E5%258C%25BA%25E9%2597%25A8%25E5%258F%25A3%25E7%25AD%2589%25E5%2586%258D%25E4%25B9%25B0%25E5%2589%2581%25E6%2589%258B%2520%25E8%25A3%2585%25E9%2580%25BC%2520%25E5%259C%259F%25E8%25B1%25AA&userPhone=15629171568&id=43&_=1449040346143
+
+获取总金币
+http://203.195.133.129/mall-front-api/jpProduct/getTotalGold.action?callback=jQuery21107385768864769489_1449028084888&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&channelCode=hnds&_=1449028084889
+分页查询用户积分列表
+http://203.195.133.129/mall-front-api/jpcms/getUserIntegralByPage.action?callback=jQuery21104000663326587528_1449028243773&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&_=1449028243774
+分页查询用户使用的积分
+http://203.195.133.129/mall-front-api/jpcms/getUsedIntegralByPage.action?callback=jQuery21104000663326587528_1449028243777&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&_=1449028243778
+查询用户总积分
+http://203.195.133.129/mall-front-api/jpcms/getTotalIntegral.action?callback=jQuery211012243678979575634_1449036276375&openid=c3d9963e3b0b437c81292f8d0c8a7bdc&_=1449036276376
+
+
+
+	 /**
+	* 通过产品code查询skuList
+	* @param callback
+	* @param productCode
+	* @return
+	* @throws Exception
+	*/
+ @RequestMapping("getSkuDetail")
+ public JSONPObject getSkuDetail(String callback, String productCode)
